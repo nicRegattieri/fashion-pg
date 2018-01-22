@@ -73,10 +73,15 @@ body {
   background: rgba(240, 240, 240, 0.966);
   font-family: Raleway, Helvetica, sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 1em; }
+
+h1 {
+  font-size: 1rem; }
 
 header {
   display: flex;
+  justify-content: center;
   align-items: center;
   z-index: 2; }
 
@@ -117,6 +122,7 @@ header {
 .pg1 {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   overflow: hidden; }
 
@@ -127,7 +133,8 @@ header {
 
 .container {
   margin: 0 20px;
-  width: 100%; }
+  display: flex;
+  flex: 1; }
 
 .hero {
   display: flex;
@@ -137,9 +144,11 @@ header {
     width: 40%;
     flex: 1; }
     .hero .box1 h1 {
-      font-size: 4em;
+      font-size: 5rem;
       font-weight: 300;
-      color: #7fbeeb; }
+      color: #7fbeeb;
+      margin: 0.5em 0;
+      text-indent: 1px; }
   .hero .imagem {
     background: url("https://images.pexels.com/photos/428336/pexels-photo-428336.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
       background-repeat: no-repeat;

@@ -14,9 +14,14 @@ body
     font-family: Raleway, Helvetica, sans-serif
     margin: 0
     padding: 0
+    font-size: 1em
+
+h1 
+    font-size: 1rem    
 
 header
     display: flex
+    justify-content: center
     align-items: center
     z-index: 2
 .navigation
@@ -58,6 +63,7 @@ header
 .pg1
     display: flex
     align-items: center
+    justify-content: center
     height: 100vh
     overflow: hidden
 
@@ -70,7 +76,8 @@ header
 
 .container
     margin: 0 20px
-    width: 100%
+    display: flex
+    flex: 1
 
 .hero
     display: flex
@@ -81,9 +88,11 @@ header
         width: 40%
         flex: 1
         h1
-            font-size: 4em
+            font-size: 5rem
             font-weight: 300
             color: $color2
+            margin: 0.5em 0
+            text-indent: 1px
     .imagem
         background: url("https://images.pexels.com/photos/428336/pexels-photo-428336.jpeg?w=940&h=650&auto=compress&cs=tinysrgb")
             repeat: no-repeat 
