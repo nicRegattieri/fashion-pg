@@ -1,0 +1,118 @@
+@import palette
+@import menu
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400')
+*
+    box-sizing: border-box
+    list-style: none
+
+p
+    color: $color3
+    line-height: 2em 
+
+body
+    background: $color5
+    font-family: Raleway, Helvetica, sans-serif
+    margin: 0
+    padding: 0
+
+header
+    display: flex
+    align-items: center
+    z-index: 2
+.navigation
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex: 1
+    
+    .list 
+        display: flex
+        flex: 2
+        ul
+            display: flex
+            justify-content: space-around
+            flex: 1
+            li
+                list-style: none
+                a
+                    text-decoration: none
+
+.wrapoverflow    
+    position: relative
+    overflow: hidden
+    height: 100vh
+    margin: 0
+
+.circle
+    width: 60em
+    height: 60em
+    background: $color1
+    display: flex
+    position: absolute
+    top: -30em
+    right: -25rem
+    border-radius: 50%
+    z-index: -1
+
+
+.pg1
+    display: flex
+    align-items: center
+    height: 100vh
+    overflow: hidden
+
+
+.box1
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+
+.container
+    margin: 0 20px
+    width: 100%
+
+.hero
+    display: flex
+    height: 70%
+    padding: 0 1em
+    
+    .box1
+        width: 40%
+        flex: 1
+        h1
+            font-size: 4em
+            font-weight: 300
+            color: $color2
+    .imagem
+        background: url("https://images.pexels.com/photos/428336/pexels-photo-428336.jpeg?w=940&h=650&auto=compress&cs=tinysrgb")
+            repeat: no-repeat 
+            size: cover
+            position: center
+        img
+            width: 63em
+        flex: 1
+        width: 40%
+            
+
+
+@media (max-width: 320px)
+    .circle
+        display: none
+    
+    .hero
+        padding: 0 2em
+
+    .hero .box1 h1  
+        font-size: 3em
+        text-align: left
+        padding: 0.3rem
+        margin: 0
+        
+
+    .box1
+        min-width: 100%
+        p
+            padding: 0.3rem
+        .more
+            align-self: 
